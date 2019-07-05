@@ -28,5 +28,14 @@ namespace TaoFileDoc.ThanhNghiaCNTT.Com.Helper
                 Marshal.FinalReleaseComObject(range);
             }
         }
+
+        public static Paragraph InsertedText(Document document, string text)
+        {
+            object missing = Type.Missing;
+            var rs = document.Content.Paragraphs.Add(ref missing);
+            rs.Range.Text = text;
+            rs.Range.InsertParagraphAfter();
+            return rs;
+        }
     }
 }

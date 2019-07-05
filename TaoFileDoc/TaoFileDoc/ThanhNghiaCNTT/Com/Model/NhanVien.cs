@@ -53,5 +53,10 @@ namespace TaoFileDoc.ThanhNghiaCNTT.Com.Model
         /// Số ngày đã làm việc
         /// </summary>
         public double DayWorked { get; set; }
+
+        /// <summary>
+        /// Số điện thoại
+        /// </summary>
+        public string Phone { get; set; }
     }
 }
