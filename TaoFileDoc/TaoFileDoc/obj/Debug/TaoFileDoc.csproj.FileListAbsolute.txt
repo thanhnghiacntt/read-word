@@ -8,3 +8,13 @@ D:\MyProject\C#\Kiet\TaoFileDoc\TaoFileDoc\obj\Debug\TaoFileDoc.csproj.GenerateR
 D:\MyProject\C#\Kiet\TaoFileDoc\TaoFileDoc\obj\Debug\TaoFileDoc.csproj.CoreCompileInputs.cache
 D:\MyProject\C#\Kiet\TaoFileDoc\TaoFileDoc\obj\Debug\TaoFileDoc.exe
 D:\MyProject\C#\Kiet\TaoFileDoc\TaoFileDoc\obj\Debug\TaoFileDoc.pdb
+D:\MyProjects\C#\read-word\TaoFileDoc\TaoFileDoc\bin\Debug\TaoFileDoc.exe.config
+D:\MyProjects\C#\read-word\TaoFileDoc\TaoFileDoc\bin\Debug\TaoFileDoc.exe
+D:\MyProjects\C#\read-word\TaoFileDoc\TaoFileDoc\bin\Debug\TaoFileDoc.pdb
+D:\MyProjects\C#\read-word\TaoFileDoc\TaoFileDoc\obj\Debug\TaoFileDoc.csprojAssemblyReference.cache
+D:\MyProjects\C#\read-word\TaoFileDoc\TaoFileDoc\obj\Debug\TaoFileDoc.Main.resources
+D:\MyProjects\C#\read-word\TaoFileDoc\TaoFileDoc\obj\Debug\TaoFileDoc.Properties.Resources.resources
+D:\MyProjects\C#\read-word\TaoFileDoc\TaoFileDoc\obj\Debug\TaoFileDoc.csproj.GenerateResource.cache
+D:\MyProjects\C#\read-word\TaoFileDoc\TaoFileDoc\obj\Debug\TaoFileDoc.csproj.CoreCompileInputs.cache
+D:\MyProjects\C#\read-word\TaoFileDoc\TaoFileDoc\obj\Debug\TaoFileDoc.exe
+D:\MyProjects\C#\read-word\TaoFileDoc\TaoFileDoc\obj\Debug\TaoFileDoc.pdb

@@ -63,7 +63,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ThanhNghiaCNTT\Com\Helper\WordFormat.cs" />
+    <Compile Include="ThanhNghiaCNTT\Com\Helper\TextContent.cs" />
     <Compile Include="ThanhNghiaCNTT\Com\Model\Cap.cs" />
     <Compile Include="ThanhNghiaCNTT\Com\Helper\HelperWord.cs" />
     <Compile Include="ThanhNghiaCNTT\Com\Helper\HelperExcel.cs" />

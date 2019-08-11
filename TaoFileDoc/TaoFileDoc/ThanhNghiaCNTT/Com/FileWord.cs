@@ -20,7 +20,7 @@ namespace TaoFileDoc.ThanhNghiaCNTT.Com
                 //Set animation status for word application  
                 ShowAnimation = false,
                 //Set status for word application is to be visible or not.  
-                Visible = false
+                Visible = true
             };
             Document = Winword.Documents.Open(Path);
         }
@@ -49,51 +49,29 @@ namespace TaoFileDoc.ThanhNghiaCNTT.Com
             }
         }
 
-        public void AddContent(string content)
+        /// <summary>
+        /// Add content
+        /// </summary>
+        /// <param name="content"></param>
+        /// <param name="style"></param>
+        public void AddContent(string content, string style = null)
         {
             Document.Content.InsertAfter(content);
             Document.Content.Select();
-            Document.Content.set_Style(Document.Styles["Title"]);
-            //Document.Paragraphs.Add(range);
-        }
-
-        private void InsertMultiFormatParagraph(string psText, int piSize, int piSpaceAfter = 10)
-        {
-            object mobjMissing = null;
-            object start = Document.Content.Start;
-            object end = Document.Content.End;
-
-            Document.Range(ref start, ref end).Select();
-
-            Paragraph para = Document.Content.Paragraphs.Add(ref mobjMissing);
-
-            para.Range.Text = psText;
-            // Explicitly set this to "not bold"
-            para.Range.Font.Bold = 0;
-            para.Range.Font.Size = piSize;
-            para.Format.SpaceAfter = piSpaceAfter;
-
-            object objStart = para.Range.Start;
-            object objEnd = para.Range.Start + psText.IndexOf(":");
-
-            Range rngBold = Document.Range(ref objStart, ref objEnd);
-            rngBold.Bold = 1;
-
-            para.Range.InsertParagraphAfter();
+            if (style != null)
+            {
+                Document.Content.set_Style(Document.Styles[style]);
+            }
         }
 
         /// <summary>
-        /// Create content
+        /// Add content
         /// </summary>
-        /// <param name="str"></param>
-        /// <param name="start"></param>
-        /// <param name="end"></param>
-        /// <returns></returns>
-        public Range CreateContent(string str, int start = 0, int end = 0)
+        /// <param name="content"></param>
+        /// <param name="style"></param>
+        public void AddContentNewLine(string content, string style = null)
         {
-            Document.Content.SetRange(start, end);
-            Document.Content.Text = str + Environment.NewLine;
-            return Document.Content;
+            AddContent("\n" + content, style);
         }
     }
 }

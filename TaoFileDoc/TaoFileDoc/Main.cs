@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TaoFileDoc.ThanhNghiaCNTT.Com;
 using TaoFileDoc.ThanhNghiaCNTT.Com.Helper;
+using TaoFileDoc.ThanhNghiaCNTT.Com.Model;
 
 namespace TaoFileDoc
 {
@@ -23,11 +24,20 @@ namespace TaoFileDoc
 
         private void BntStart_Click(object sender, EventArgs e)
         {
-            string fileName = @"D:\MyProject\VBA\ThongTinConNguoi.docx";
-            string fileExcel = @"D:\MyProject\C#\Kiet\Temp\Kiet\Form.xlsx";
+            string fileName = @"D:\MyProjects\VBA\ThongTinConNguoi.docx";
+            string fileExcel = @"D:\MyProjects\C#\Kiet\Temp\Kiet\Form.xlsx";
             var temp = HelperExcel.GetInfoExcel(fileExcel);
-            FileWord fileWord = new FileWord(@"D:\MyProject\C#\Kiet\Data\Mau\CongHoa.docx");
-            fileWord.AddContent("Nguyễn Thành Nghĩa \n");
+            AddFile(temp, @"D:\MyProjects\C#\read-word\Data\mau.docx");
+        }
+
+        private void AddFile(InfoExcel infoExcel, string path)
+        {
+
+            FileWord fileWord = new FileWord(path);
+            fileWord.AddContent(TextContent.CongHoa, "Heading 1");
+            fileWord.AddContentNewLine(TextContent.DocLap, "Heading 2");
+            fileWord.AddContentNewLine(TextContent.HopDong);
+            fileWord.AddContentNewLine(TextContent.SoHopDong);
             fileWord.Save(@"D:\abc.doc");
             fileWord.Close();
         }
