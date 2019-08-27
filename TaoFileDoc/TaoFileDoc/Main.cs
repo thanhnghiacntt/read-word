@@ -36,7 +36,7 @@ namespace TaoFileDoc
             FileWord fileWord = new FileWord(path);
             fileWord.AddContent(TextContent.CongHoa, "Heading 1");
             fileWord.AddContentNewLine(TextContent.DocLap, "Heading 2");
-            fileWord.AddContentNewLine(TextContent.HopDong);
+            fileWord.AddContentNewLine(TextContent.HopDong, "Heading 3");
             fileWord.AddContentNewLine(TextContent.SoHopDong);
             fileWord.Save(@"D:\abc.doc");
             fileWord.Close();
